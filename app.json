@@ -1,0 +1,18 @@
+{
+	"reponame":"sample-jqm-springboard-nav",
+	"title":"jQM Springboard Nav",
+	"abbr":"jQMSpringboard",
+	"tooltip":"jQuery Mobile scaffold using springboard-based navigation",
+	"description":"A multi-page jQuery Mobile scaffold using springboard-based navigation. It also demonstrates custom styling techniques to adapt to various screen sizes and rotations, and achieve a different look and feel than jQuery Mobile defaults.",
+	"highlights":["jQuery"],
+	"apppreview":"true",
+	"appname":"demo.jqmspringboardnav",
+	"articleUrl":"http://software.intel.com/en-us/articles/jquery-mobile-springboard-navigation",
+	"keywords":["jQuery"],
+	"iconUrl":"https://github.com/gomobile/sample-jqm-springboard-nav/blob/master/icon.png",
+	"screenshotUrl":"https://github.com/gomobile/sample-jqm-springboard-nav/blob/master/screenshot.png",
+	"visible" : "true",
+	"zipUrl":"",
+	"relname":"4.0.0"
+}
+

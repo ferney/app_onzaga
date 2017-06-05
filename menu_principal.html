@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+        
+    <link rel="stylesheet" type="text/css" href="vendor/jquery.mobile/jquery.mobile-1.1.1.css" />	
+    <link rel="stylesheet" type="text/css" href="vendor/jquery.mobile/jquery.mobile-1.1.1-custom.css" />	
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    
+    <!-- scripts -->
+    <script type="text/javascript" src="app/deviceCheck.js"></script>
+    
+    <script>
+    function includeJavaScript( url ){
+        var tag = document.createElement( 'script' );
+        tag.type = "text/javascript";
+        tag.src = url;
+
+        // Insert it to the <head>
+        document.getElementsByTagName("head")[0].appendChild( tag );
+    }
+    </script>
+
+    <!-- note: use jquery-1.8.0.min.js & jquery.mobile-1.1.1.min.js for production -->
+	<script>
+		if (deviceCheck.windows8) {
+		    includeJavaScript("vendor/jquery/jquery-1.8.2-win8-1.0.js");
+		}
+		else {
+		    includeJavaScript("vendor/jquery/jquery-1.8.0.js");
+		}
+        setTimeout(function(){
+        	includeJavaScript("vendor/jquery.mobile/jquery.mobile-1.1.1.js");
+    		includeJavaScript("app/springboard.js");
+            }, 100);
+	</script>
+    
+    <!-- title of app -->
+    <title>Springboard</title>
+
+    <!-- mobile layout sized appropriately to viewport width and not zoomable -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <style>.texto{
+        text-align: justify;
+        overflow:auto;
+      overflow-y: scroll;
+        
+        }</style>
+</head>
+
+<body background="images/iglesia.jpg">
+
+    <!-- home page -->
+    <div data-role="page" id="home" >
+    
+        <!-- content -->
+        <div data-role="content" class="springboard-container">
+        
+            <!-- custom header -->
+            <h1 style="color:black" align="center">GUIA TURISTICA<br>ONZAGA-SANTANDER</h1>
+<div class="jquery-script-ads" align="center">
+<script type="text/javascript"
+src="show_ads.js">
+</script></div>
+<div class="menu">
+  <div class="btn trigger"> <span class="line"></span> </div>
+  <div class="rotater">
+      <div class="btn btn-icon"> <a href="#historia" data-transition="fade"><img src="images/icons_dark/history.ico" width="50px" height="50px"/>HISTORIA</a><i class="fa fa-html5"></i> </div>
+  </div>
+  <div class="rotater">
+    <div class="btn btn-icon"><a href="#TRADICION" data-transition="fade"><img src="images/icons_dark/Party.ico" width="50px" height="50px"/>TRADICION</a><i class="fa fa-facebook"></i> </div>
+  </div>
+  <div class="rotater">
+    <div class="btn btn-icon"><a href="#GASTRONOMIA" data-transition="fade"><img src="images/icons_dark/chef.ico"width="50px" height="50px" />GASTRONOMIA</a><i class="fa fa-google-plus"></i> </div>
+  </div>
+  <div class="rotater">
+    <div class="btn btn-icon"><a href="#RUTAS" data-transition="fade"><img src="images/icons_dark/compass.ico" width="50px" height="50px"/>RUTAS</a><i class="fa fa-twitter"></i> </div>
+  </div>
+  <div class="rotater">
+    <div class="btn btn-icon"><a href="#VISITAR" data-transition="fade"><img src="images/icons_dark/destination.ico" width="50px" height="50px"/>VISITAR</a><i class="fa fa-css3"></i> </div>
+  </div>
+  <div class="rotater">
+    <div class="btn btn-icon"><a href="#GALERIA" data-transition="fade"><img src="images/icons_dark/summer.ico" width="50px" height="50px"/>GALERIA</a><i class="fa fa-instagram"></i> </div>
+  </div>
+  <div class="rotater">
+    <div class="btn btn-icon"><a href="#DIRECTORIO" data-transition="fade"><img src="images/icons_dark/oppo.ico"width="50px" height="50px" />DIRECTORIO</a><i class="fa fa-github"></i> </div>
+  </div>
+  <div class="rotater">
+    <div class="btn btn-icon"><a href="#MANUAL" data-transition="fade"><img src="images/icons_dark/text.ico" width="50px" height="50px"/>GUIA</a><i class="fa fa-linkedin"></i> </div>
+  </div>
+</div>
+<script src="jquery.min.js"></script> 
+<script>
+$(document).ready(function() {
+  $(".trigger").click(function() {
+    $(".menu").toggleClass("active"); 
+  });
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+            
+        </div> <!-- content -->
+        
+    </div> <!-- page: home -->
+
+
+
+
+
+<!-- friends -->
+    <div data-role="page" id="historia" data-theme="a">
+    
+        <!-- header (same data-id for persistent toolbar) -->
+        <div data-role="header" data-id="springboardnav-header" data-position="fixed">
+            <h1>HISTORIA</h1>
+            <!-- wrap link inside div to prevent jquery mobile from automatically converting to button -->
+            <div class="springboard-backbtn">
+                <a href="#" data-rel="back">
+                    <img src="images/icons_dark/home.ico" width="25%" height="25%"/>
+                </a>
+            </div>
+        </div>
+        <br>
+         
+           <center><div class="ui-grid-a springboard">
+                
+                <!-- row 1, column 1 -->
+                <div class="ui-block-a">
+                    <a href="#ONZAGA" data-transition="fade">
+                        <img src="images/icons_dark/view.ico" class="springboard-portrait-img" />
+                        <p></p><p>HISTORIA</p>
+                    </a>
+                </div>
+                
+                <!-- row 1, column 2 -->
+                <div class="ui-block-b">
+                    <a href="#ANTEPASADOS" data-transition="fade">
+                        <img src="images/icons_dark/HUNZAHUA.jpg" class="springboard-portrait-img"></img>
+                        <p></p><p>ANTEPASADOS</p>
+                    </a>
+                </div>
+                
+                <!-- row 2, column 1 -->
+                <div class="ui-block-a">
+                    <a href="#PROCERES" data-transition="flip">
+                        <img src="images/icons_dark/RoO.jpg" class="springboard-portrait-img"></img>
+                        <p></p><p>PROCERES</p>
+                    </a>
+                </div>
+                
+                <!-- row 2, column 2 -->
+                <div class="ui-block-b">
+                    <a href="#GALERIA" data-transition="flip">
+                        <img src="images/icons_dark/photo.ico" class="springboard-portrait-img"></img>
+                        <p></p><p>GALERIA</p>
+                    </a>
+                </div>
+                
+            </div></center> 
+        
+        
+       
+
+        <div data-role="content">
+            <!-- custom credits footer -->
+            <div class="springboard-credits">
+
+            </div>
+        </div>
+        
+        
+    </div> <!-- page: friends -->
+
+
+
+
+
+
+
+ <!-- videos -->
+    <div data-role="page" id="ONZAGA" data-theme="a" style="overflow=scroll;">
+    
+        <!-- header (same data-id for persistent toolbar) -->
+        <div data-role="header" data-id="springboardnav-header" data-position="fixed">
+            <h1>ONZAGA</h1>
+            <!-- wrap link inside div to prevent jquery mobile from automatically converting to button -->
+            <div class="springboard-backbtn">
+                <a href="#historia" data-rel="back">
+                   < ATRAS
+                </a>
+            </div>
+        </div>
+       
+             <center> <img src="images/icons_dark/IMG_4918.JPG" /></center>                         
+                                   <h2>Fecha de fundación:31 de marzo de 1602</h2><br> 
+
+Nombre del/los fundador (es):Padres Dominicos<br><br>
+
+Reseña histórica:<br><br>
+
+<P class="texto">Son pocos los datos existentes sobre la historia de los indígenas que poblaron las antiguas tierras de ONZAGA. Relatos que por tradición oral han llegado hasta hoy, establecen que la palabra Onzaga se deriva de un cacique llamado Hunzaá, de cuyo termino los españoles derivaron el nombre de Onzaga. Antes de la conquista, al cacique de Onzaga le tributaban, por lo menos veinticuatro capitanes mantas y comida. A su vez, el y sus indios estaban sujetos a Tundama, el gran cacique de Duitama, y ofrecían mantas, yucas, batatas, etc.<br><br>
+
+Los aborígenes eran gente sedentaria, con gran sentido de espiritualidad y dedicados a la elaboración de mantas de lana, a la agricultura, la caza y la pesca. Manejaban muy bien el sistema de riego, hecho que les permitió obtener abundantes y muy ricas cosechas. Gracias a la influencia de la cultura Guane, lograron obtener un alto grado de desarrollo en las áreas técnicas y social. Según los cronistas Fray Pedro Simón, Otero y Juan de Castellanos, los Guanes en esta región se ubicaban dentro de los siguientes limites: al Norte del río de oro, la mesa de Juan Rodríguez y el río Guaca; al oriente del río Guaca, río Chicamocha y el río Onzaga; al sur del río Lenguaruco y el río Saravita o Suarez; al occidente del río Suarez, cordillera de los Yarigûíes y del río Sogamoso. <br><br>
+                En cuanto a la ubicacion del pueblo ONZAGUEÑO, la tradición oral afirma que este se estableció primero en Susa, de donde se traslado hasta su actual ubicación. Al revisar los libros sacramentales del pueblo que se congrego en Onzaga, se aprecia la permanente relación que estos indígenas mantuvieron durante el tiempo neogranadino, con otros de su misma etnia, antiguos tributarios de gran señor de Duitama. Por esta razón, durante la época de la colonia, el territorio onzagueño fue administrado por un corregidor perteneciente a la jurisdicción de la ciudad de Tunja, jurisdicción que se extendía hasta Mogotes, Coromoro y Tequia. Aquellos indígenas (634) debían pagar tributo a dicho corregidor; elaborando mantas (182 de lana y 657 de algodón).
+<br><br>
+Acabado el pueblo de indios los feligreses blancos y mestizos pidieron se erigiera la parroquia de Onzaga, dejando como párroco al ultimo doctrinero, Fray Lorenzo Plata. Fue el promotor fiscal del arzobispado quien aprobó, el doce de julio de 1777 la construcción de la parroquia bajo la advocación de “ Nuestra Señora de la Concepción de Onzaga”, decisión confirmada el treinta de julio por decreto arzobispal, y el trece de septiembre en auto firmado por el Virrey Manuel Antonio Flórez.
+<br><br>
+El trazado de la parroquia se hizo en tierras donadas por Don Nicolás López y Doña Teresa de Vidal. Autorizados por el párroco Lorenzo Plata, los españoles y mestizos suscribieron las cartas de obligación que los comprometían a mantener las tres cofradías (Santísimo Sacramento, Virgen de la Concepción y Animas Benditas) y a pagar la congrua del cura de la parroquia. Al comparar los datos del archivo departamental con los obtenidos en los archivos municipales, se advierten ciertas inconsistencias porque aparecen diferentes fechas así: En el archivo departamental figura la creación del municipio en el año de 1.602 pero no se encontró la ordenanza correspondiente. En el libro primero, de la notaria de Onzaga, se hace efectivo un negocio entre los señores Ascensión López y Juan Antonio Caballero y para tal efecto, el alcalde Marcelino López y el tesorero Rafael Eslava expidieron un certificado de insolvencia.
+<br><br>
+El negocio se efectúo el 14 de Enero de 1875, lo cual indica que ya funcionaba la alcaldía. Por datos obtenidos en el archivo parroquial y en el archivo histórico nacional, se sabe que ha partir de la colonia a Onzaga llegaron pobladores de Mogotes, Soatá, Tutasá, Sativa, Susacón, Cocuy y San Juan de los Llanos, entre otros (ver mapa: Migraciones a Onzaga). Es muy posible que la gran fertilidad de sus terrenos, en aquella época, motivara a los pueblos vecinos para trasladarse a estas tierras. Por otra parte, con la colonización española, la reducción de la población indígena se generalizo y el traslado de grupos humanos se efectúo de manera masiva y por orden de la real corona.<br><br><center>fuente: Alcaldia municipal.</center>  </P>
+                                              
+            
+        <div data-role="content">
+            <!-- custom credits footer -->
+            <div class="springboard-credits">
+            </div>
+        </div>
+        
+    </div> <!-- page: videos -->     
+        
+        
+         <!-- videos -->
+    <div data-role="page" id="ANTEPASADOS" data-theme="a">
+    
+        <!-- header (same data-id for persistent toolbar) -->
+        <div data-role="header" data-id="springboardnav-header" data-position="fixed">
+            <h1>ANTEPASADOS</h1>
+            <!-- wrap link inside div to prevent jquery mobile from automatically converting to button -->
+            <div class="springboard-backbtn">
+                <a href="#historia" data-rel="back">
+                   < ATRAS
+                </a>
+            </div>
+        </div>
+       <center><img src="images/icons_dark/HUNZAHUA.jpg"/></center> <br>
+                Edad muisca<br><br>
+Primera edad muisca<br><br>
+En una etapa de continuos enfrentamientos entre cacicazagos, se propuso pacificar la región y para ello se hizo un consenso entre los dirigentes muiscas para elegir a un jefe supremo que los gobernara a todos. Resultó electo Hunzahúa, oriundo de Ramiriquí, de quien tomó nombre la confederación, que se llamó Hunza. Tomó el nombre de zaque (‘señor-grande’, lo mismo que significaba zipa entre la comunidad de Bacatá). El zaque ejerció el control sobre las tierras que van desde el río Chicamocha hasta los Sutagaos, y desde las vertientes de los llanos de San Juan hasta las fronteras de los Panches y los muzos, con toda la tierra de Vélez. La unidad instaurada permitió unificar el idioma y la religión de los muiscas, y sólo fue rota a fines del siglo XV por el zipa Saguanmachica, en tiempos del zaque Michua, a raíz de las diferencias que tuvo con el cacique de Guatavita.<br><br>
+
+El Zipa Saguanmachica apoyado por su vasallo de Pasca, sometió a Fusagasugá y Tibacuy, e intentó tomar Guatavita, cuyo cacique solicitó auxilio a Michua, quien envió a un heraldo con el fin de que el Zipa se presentara en su corte y respondiera las quejas de Guatavita. El Zipa menospreció su autoridad y maltrató a su enviado. Ante esto, Michua se dirigió con un ejército de cuarenta mil hombres a los territorios del Zipa. Sin embargo, al enterarse de la fortaleza militar de Saguanmachica se abstuvo de iniciar hostilidades. Tal actitud le permitió al Zipa dirigir sus tropas contra el cacique independiente de Ubaque, que había atacado Pasca y Usme, y defenderse de los ataques de Guatavita y del pueblo caribe de los Panches.<br><br>
+
+Última edad muisca<br><br>
+Hacia 1490 Saguanmachica, con cincuenta mil soldados decide un ataque masivo al Zaque, atraviesa las tierras de Guatavita y en Chocontá enfrenta al ejército de Michua que lo superaba en cantidad. La batalla se prolonga por tres horas y los dos soberanos mueren.5 A sus 18 años, Quemuenchatocha accedió al zacazgo durante la tensa tregua entre las dos comunidades.<br><br>
+
+En 1514, el zaque descubrió las intenciones expansionistas de Nemequene y solicitó apoyo de los caciques de Gameza, Iraca, Duitama y Sáchica, unificando sus ejércitos. La batalla se desató en el Arroyo las Vueltas.6 Nemequene, que llevaba la victoria, resultó mortalmente herido, por lo cual sus tropas se retiraron. Sugamuxi, cacique de Iraca, le retiró el apoyo, y consiguió una tregua cuyos términos estaban por cumplirse a la llegada de los españoles. Al enterarse de que los europeos merodeaban por sus tierras, Quemuenchatocha no se movió de su cercado, ni adelantó actos de agresión contra los invasores. Prohibió bajo graves penas que se les indicara el camino a su cercado y cuando se enteró de que se aproximaban, les envió regalos y emisarios de paz, buscando detenerlos mientras escondía sus riquezas.<br><br>
+
+<h2>Conquista española</h2>
+                                                  <center><img src="images/icons_dark/Sin%20t%C3%ADtulo.jpg"/></center>
+Descubrimiento español de Hunza<br><br>
+Gonzalo Jiménez de Quesada salió de Santa Marta en abril de 1536, en una de las expediciones hacia el sur del continente. Su objetivo fue localizar y conquistar El Dorado. Luego de algunos meses de travesía, encuentra numerosos cacicazgos muiscas sobre el actual territorio del altiplano cundiboyacense. En su búsqueda, recibe informaciones acerca del hallazgo de esmeraldas y otros tesoros en Somondoco y los Llanos orientales. Finalmente, el 20 de agosto de 1537, llegaron los conquistadores, venían con caballos y perros, y el propio Gonzalo Jiménez de Quesada llegó a los aposentos de Quemuenchatocha. Lo encontraron sentado en una silla adornado con mucho oro en sus vestidos y en la misma forma que sus acompañantes, quienes aterrados huyeron dejándolo solo; el oro, las esmeraldas y las finas telas fueron saqueadas. Este acto de la Conquista se realizó en el lugar en donde actualmente se encuentra el Convento de San Agustín. Quemuenchatocha fue llevado hasta Suesca, con la esperanza de que revelara el sitio donde había ocultado el resto de sus tesoros. Abdicó en su sobrino Aquiminzaque y se retiró a a Ramiquirí (Rumiraqui), donde al poco tiempo murió.<br><br>
+
+Colonización de Hunza Tunja<br><br>
+                                                  <center><img src="images/icons_dark/indios.jpg"/></center>
+La conquista española del territorio comenzó cuando Gonzalo Jiménez de Quesada capturó a Quemuenchatocha, quien fue sucedido en vida por el joven Aquiminzaque. Este último, junto con su tribu, fueron tomados en encomienda por Hernán Pérez de Quesada. El nuevo zaque no se mostró belicoso frente a los españoles, e incluso se dejó convertir al catolicismo. Las continuas y numerosas exigencias que hacían los españoles, generaban disconformidad en la población muisca.<br><br>
+
+Aquiminzaque debía verificar sus nupcias con la hija de cacique de Gámeza y varios jefes se aprestaban a concurrir a la solemne ceremonia. A Pérez de Quesada le llegó el rumor que la ocasión sería utilizada para una sublevación general, por lo que apresó a Aquiminzaque y todos los caciques, entre ellos los de Toca, Motavita, Samacá, Turquemé, Suta y los hizo asesinar.<br><br>
+
+En 1540 fue decapitado el zaque Aquiminzaque, y su deceso marcó el fin de la dinastía de los zaques hunzas.7 Los indígenas del zacazgo fueron dispersados y esclavizados en encomiendas a lo largo de la nueva provincia de Tunja.8 Gonzalo Suárez Rendón realizó la «fundación» hispánica de la ciudad, esta vez bajo el nombre de Tunja.<br><br>
+
+        <div data-role="content">
+            <!-- custom credits footer -->
+            <div class="springboard-credits">
+            </div>
+        </div>
+        
+    </div> <!-- page: videos -->        
+        
+         <!-- videos -->
+    <div data-role="page" id="PROCERES" data-theme="a">
+    
+        <!-- header (same data-id for persistent toolbar) -->
+        <div data-role="header" data-id="springboardnav-header" data-position="fixed">
+            <h1>PROCERES</h1>
+            <!-- wrap link inside div to prevent jquery mobile from automatically converting to button -->
+            <div class="springboard-backbtn">
+                <a href="#historia" data-rel="back">
+                   < ATRAS
+                </a>
+            </div>
+        </div>
+        <div class="pages_container" style="text-align: justify;">
+                                                                                            
+                                    <H2>GALAN </H2> <br>
+                
+                <CENTER><img src="images/icons_dark/Ro.jpg" /></CENTER>
+
+Galán llegó a la provincia del Socorro el 2 de septiembre y decidió aguardar el cumplimiento del plazo solicitado por el arzobispo. Al vencerse dicho término, junto a sus compañeros reunió hombres de las jurisdicciones de Pamplona y Sogamoso. Tenía previsto concentrarse en Santa Rosa hacia el 10 de octubre, para de allí salir hacia Guachetá, lugar donde el plan contemplaba reunirse con las tropas que deberían partir de Socorro y San Gil. Sin embargo, Galán fue apresado en Onzaga–actual Santander– el 13 de octubre de 1781, frustrándose así los planes de una nueva marcha hacia la capital del virreinato.<br><br>
+
+Galán fue acusado por todos los hechos ocurridos a lo largo de la rebelión y tras su juicio fue ejecutado en la plaza mayor de Santafé el 1 de febrero de 1782, junto con Isidro Molina, Lorenzo Alcantuz y Manuel Ortiz. Luego de la ejecución de Galán y restaurado el orden, el virrey Flores restableció los impuestos motivo de los levantamientos del común. Ya como virrey, Caballero y Góngora concedió, el 7 de agosto de 1782, un perdón general a los involucrados en la insurrección. Si la paz retornaba desde el punto de vista de las autoridades reales, no fue así para los comuneros.
+ <br> <H2>SIMON BOLIVAR </H2> <br>
+                                                  <center><img src="images/icons_dark/simon.jpg"/></center>
+ De paso por onzaga y proveniente de santa fe, el libertador con su escolta se acuartelaron en una de las casonas que allí existian.<br>
+Suelen referirse a el como un hombre moreno, quemado por el sol, venia acompañado por soldados negros y en su compañia traía dos perros mastines encadenados.<br>Doña Ignacia Prada Guzmán, una rica dama española le dio alojamiento en su cada en el pueblo y el libertador pecnocto allí con sus hombres, esta dama anque española, era admiradora del libertador, le dio una esquela de agradecimiento, al  momento de la partida del libertador hacia bucaramanga, ella le preparo de su propia mano unas arepas como fiambre para el camino. (la casa citada posiblemente es la escuela urbana frente al parque).
+                                              
+                                              </div>
+        <div data-role="content">
+            <!-- custom credits footer -->
+            <div class="springboard-credits">
+            </div>
+        </div>
+        
+    </div> <!-- page: videos -->        
+        
+         <!-- videos -->
+    <div data-role="page" id="GALERIA" data-theme="a">
+    
+        <!-- header (same data-id for persistent toolbar) -->
+        <div data-role="header" data-id="springboardnav-header" data-position="fixed">
+            <h1>GALERIA</h1>
+            <!-- wrap link inside div to prevent jquery mobile from automatically converting to button -->
+            <div class="springboard-backbtn">
+                <a href="#historia" data-rel="back">
+                   < ATRAS
+                </a>
+            </div>
+        </div>
+         <style type="text/css">
+   #galeria, #galeria * {box-sizing:border-box,-moz-box-sizing:border-box}
+#galeria {
+border: 1px solid #EAEAEA;  
+padding: 10px;
+padding-bottom: 0;
+background: white;  
+width: 410px;  
+}
+#galeria_miniaturas {
+display: table;
+margin: 0 auto;
+}
+#imgGaleria {
+border: 1px solid #F2F2F2;  
+padding: 3px;
+width: x; 
+height: x; 
+}
+.miniatura {
+width:  60px;  
+height:  60px;  
+float: left;
+cursor: pointer;
+padding: 5px;
+margin: 10px 5px;
+}
+.miniatura:hover {
+opacity:.8;   
+-moz-opacity:.8;
+-khtml-opacity:.8;
+filter:alpha(opacity=80);
+}
+.miniatura:active {
+opacity:1;
+-moz-opacity:1;
+-khtml-opacity:1;
+filter:alpha(opacity=80);
+}
+    </style>
+                                              <div id="galeria">
+<div id="galeria_imagen">
+    <img id="imgGaleria" src="images/icons_dark/photo.ico" /></div>
+<div id="galeria_miniaturas">
+<img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="images/icons_dark/edicto.jpg" />
+<img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="images/icons_dark/edicto2.jpg" />
+<img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="images/icons_dark/edicto3.png" />
+<img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="images/icons_dark/edicto4.png" />
+<img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="images/icons_dark/edicto6.png" />
+
+<img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="images/icons_dark/edicto7.png" />
+<img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="images/icons_dark/edicto8.png" />
+<img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="images/icons_dark/edicto9.png" />
+<img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="images/icons_dark/edicto10.png" />
+<img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="images/icons_dark/edicto11.png" />
+<img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="images/icons_dark/edicto12.png" />
+<img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="images/icons_dark/edicto13.png" />
+<img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="images/icons_dark/edicto14.png" />
+<img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="images/icons_dark/edicto15.png" />
+<img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="images/icons_dark/edicto16.png" />
+<img class="miniatura" onclick="javascript:document.getElementById('imgGaleria').src=this.src;" src="images/icons_dark/edicto17.png" />
+
+
+</div>
+</div>
+        <div data-role="content">
+            <!-- custom credits footer -->
+            <div class="springboard-credits">
+            </div>
+        </div>
+        
+    </div> <!-- page: videos -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- friends -->
+    <div data-role="page" id="TRADICION" data-theme="a">
+    
+        <!-- header (same data-id for persistent toolbar) -->
+        <div data-role="header" data-id="springboardnav-header" data-position="fixed">
+            <h1>TRADICIONES</h1>
+            <!-- wrap link inside div to prevent jquery mobile from automatically converting to button -->
+            <div class="springboard-backbtn">
+                <a href="#" data-rel="back">
+                    <img src="images/icons_dark/home.ico" width="25%" height="25%"/>
+                </a>
+            </div>
+        </div>
+        <br>
+         
+           <center><div class="ui-grid-a springboard">
+                
+                <!-- row 1, column 1 -->
+                <div class="ui-block-a">
+                    <a href="#SEÑOR" data-transition="fade">
+                        <img src="images/icons_dark/CRISTO.png" class="springboard-portrait-img" />
+                        <p></p><p>SEÑOR DE LOS MILAGROS</p>
+                    </a>
+                </div>
+                
+                <!-- row 1, column 2 -->
+                <div class="ui-block-b">
+                    <a href="#CACIQUE" data-transition="fade">
+                        <img src="images/icons_dark/HUNZAHUA.jpg" class="springboard-portrait-img"></img>
+                        <p></p><p>CACIQUE HUNZAA<BR>Y FESTIVAL DEL MAIZ</p>
+                    </a>
+                </div>
+                
+                <!-- row 2, column 1 -->
+                <div class="ui-block-a">
+                    <a href="#CARNAVAL" data-transition="flip">
+                        <img src="images/icons_dark/fiesta.png" class="springboard-portrait-img"></img>
+                        <p></p><p>CARNAVAL ONZAGUEÑO</p>
+                    </a>
+                </div>
+                
+                <!-- row 2, column 2 -->
+                <div class="ui-block-b">
+                    <a href="#GALERIA1" data-transition="flip">
+                        <img src="images/icons_dark/photo.ico" class="springboard-portrait-img"></img>
+                        <p></p><p>GALERIA</p>
+                    </a>
+                </div>
+                
+            </div></center> 
+        
+        
+       
+
+        <div data-role="content">
+            <!-- custom credits footer -->
+            <div class="springboard-credits">
+
+            </div>
+        </div>
+        
+        
+    </div> <!-- page: friends -->
+
+
+
+
+
+
+
+
+
+<!-- videos -->
+    <div data-role="page" id="SEÑOR" data-theme="a">
+    
+        <!-- header (same data-id for persistent toolbar) -->
+        <div data-role="header" data-id="springboardnav-header" data-position="fixed">
+            <h1>FIESTA DEL SEÑOR<BR> DE LOS MILAGROS</h1>
+            <!-- wrap link inside div to prevent jquery mobile from automatically converting to button -->
+            <div class="springboard-backbtn">
+                <a href="#TRADICION" data-rel="back">
+                   <img src="images/icons_dark/home.ico" width="25%" height="25%"/>
+                </a>
+            </div>
+        </div>
+        <center> <h3>FIESTA DEL SEÑOR DE LOS MILAGROS</h3>
+                                                    <img src="images/icons_dark/cristo3.png"7></center>
+                                              Este Santo Cristo mas que un patrono, es el alma de Onzaga y sus habitantes, por ello la mitad de la historia de este municipio gira entorno al Señor de Los Milagros. Segun la historia dice que los indígenas la tenían oculta para preservarla de posibles hurtos, entonces la imagen fue encontrada enterrada en Susa. <br><br>
+Dice la tradición que varios campesinos se encontraban arando y descubrieron la imagen enterrada. También cuentan los antiguos que hacia el año 1698 fue llevado al sitio que se conoce como Pueblo Viejo pero en el momento que la estaban trasladando la imagen se hizo tan pesada que fue imposible su traslado, el cura de la época tuvo que realizar una ceremonia para que El Santo Cristo se dejara trasladar. <br><br>
+
+Fue necesario realizar rogativas y ceremonias fervorosas para lograr el objetivo. Finalmente el Santo Cristo fue llevado al sitio conocido como Pueblo Viejo hacia el año 1734.<br><br>
+
+Onzaga cuenta con una profunda religiosidad en sus habitantes, dando importancia a las fiestas patronales del Señor de los Milagros, que se celebran el 1º de enero, la cual coincide con las fiestas del retorno en época de navidad y vacaciones, notándose la presencia de las colonias de onzagueños procedentes de Ibague, Bogotá y Bucaramanga principalmente.<br><br>
+                                                  Otras fiestas religiosas que revisten importancia corresponden a la celebración de la Semana Mayor (Semana Santa), los Primeros Viernes de cada mes, El Corpus Cristi y San Isidro entre otras festividades que mantienen vivas las costumbres y tradición religiosa de los onzagueños.
+        <div data-role="content">
+            <!-- custom credits footer -->
+            <div class="springboard-credits">
+            </div>
+        </div>
+        
+    </div> <!-- page: videos --><!-- videos -->
+    <div data-role="page" id="CACIQUE" data-theme="a">
+    
+        <!-- header (same data-id for persistent toolbar) -->
+        <div data-role="header" data-id="springboardnav-header" data-position="fixed">
+            <h1>CACIQUE HUNZAA Y<BR>FESTIVAL DEL MAIZ</h1>
+            <!-- wrap link inside div to prevent jquery mobile from automatically converting to button -->
+            <div class="springboard-backbtn">
+                <a href="#TRADICION" data-rel="back">
+                   <img src="images/icons_dark/home.ico" width="25%" height="25%"/>
+                </a>
+            </div>
+        </div>
+       <h2 class="page_title">FIESTA DEL MAIZ <br>Y EL CACIQUE</h2>                                              
+                                     <center> <img src="images/icons_dark/indio.png" /></center>  
+                                                  El encuentro cultural cacique hunzaa, uno de los puntos más importantes que se enmarcan en este festival es el poder apreciar la presentación de Danzas, teatro y la música, la feria artesanal, el gran desfile de las representantes con la presentación de los trajes típicos que engalan la noche como un abrebocas para lo que se estaba esperando con el desfile de carrozas, un trabajo magnifico, hermoso y grande se ve reflejado en esta actividad, gran creatividad de nuestros campesinos, estudiantes y entidades que participan.<br><br><center> <img src="images/icons_dark/GALLO.jpg" /></center>  
+                                   Este encuentro mas conocido como el Festival del Maiz, es realizado en los primeros dias del mes de julio de cada año. Se inicia con el reinado popular del maiz con la participacion de las diferesntes reinas provenientes de cada vereda con su respectivo traje o vestido confeccionado con los principales derivados del maiz. Se continua con el tradicional desfile de carroza hechas con la horazca, la tuza y el grano de maiz. Tambien se realiza el festival gastronomico el cual cuenta con los productos del maiz comos son las chorotas, el mute, embueltos, arepas entre otros. Se realiza tambien la feria agropeciuaria donde se hace exposicion de las diferentes razas lecheras y doble proposito con muy buenos ejemplares. Amenizan las noches de estas festividades excelentes grupos musicales y orquestas reconocidas en la region.
+        <div data-role="content">
+            <!-- custom credits footer -->
+            <div class="springboard-credits">
+            </div>
+        </div>
+        
+    </div> <!-- page: videos --><!-- videos -->
+    <div data-role="page" id="CARNAVAL" data-theme="a">
+    
+        <!-- header (same data-id for persistent toolbar) -->
+        <div data-role="header" data-id="springboardnav-header" data-position="fixed">
+            <h1>CARNAVAL ONZAGUEÑO</h1>
+            <!-- wrap link inside div to prevent jquery mobile from automatically converting to button -->
+            <div class="springboard-backbtn">
+                <a href="#TRADICION" data-rel="back">
+                   <img src="images/icons_dark/home.ico" width="25%" height="25%"/>
+                </a>
+            </div>
+        </div>
+       <h2 class="page_title">FESTIVAL ONZAGUEÑO</h2> 
+                                                  <CENTER><img src="images/icons_dark/carnaval.png"/></CENTER>
+                                    Este carnaval se realiza todos los años los dias 29,30 ,31 de diciembre y el 1 de enero. Se lleva a cabo el desfile de comparsas y disfraces tradicionales por las calles de nuestro municipio, terminando este desfile se da paso al payaso y sus coplas el cual tiene un completo repertorio de coplas compuestas por todos los acontecimientos que involucran a los ciudadanos onzagueños. las noches de estas festividades son amenizadas por orquestas y grupos musicales del momento, acompañado de espectaculares juegos pirotecnicos para despedir el año. Para dar fin a las festividades y dando la bienvenida al nuevo año, el primer dia de este se celebra la fiesta de nuestro patrono EL SEÑOR DE LOS MILAGROS con una hermoza eucaristia y prosecion con la imagen por las principales calles de nuestro municipio.
+        <div data-role="content">
+            <!-- custom credits footer -->
+            <div class="springboard-credits">
+            </div>
+        </div>
+        
+    </div> <!-- page: videos --><!-- videos -->
+    <div data-role="page" id="GALERIA1" data-theme="a">
+    
+        <!-- header (same data-id for persistent toolbar) -->
+        <div data-role="header" data-id="springboardnav-header" data-position="fixed">
+            <h1>GALERIA</h1>
+            <!-- wrap link inside div to prevent jquery mobile from automatically converting to button -->
+            <div class="springboard-backbtn">
+                <a href="#TRADICION" data-rel="back">
+                   <img src="images/icons_dark/home.ico" width="25%" height="25%"/>
+                </a>
+            </div>
+        </div>
+        <style type="text/css">
+   #galeria1, #galeria1 * {box-sizing:border-box,-moz-box-sizing:border-box}
+#galeria1 {
+border: 1px solid #EAEAEA;  
+padding: 10px;
+padding-bottom: 0;
+background: white;  
+width: 410px;  
+}
+#galeria_miniaturas1 {
+display: table;
+margin: 0 auto;
+}
+#imgGaleria1 {
+border: 1px solid #F2F2F2;  
+padding: 3px;
+width: 80%; 
+height: 80%; 
+}
+.miniatura1 {
+width:  60px;  
+height:  60px;  
+float: left;
+cursor: pointer;
+padding: 5px;
+margin: 10px 5px;
+}
+.miniatura1:hover {
+opacity:.8;   
+-moz-opacity:.8;
+-khtml-opacity:.8;
+filter:alpha(opacity=80);
+}
+.miniatura1:active {
+opacity:1;
+-moz-opacity:1;
+-khtml-opacity:1;
+filter:alpha(opacity=80);
+}
+    </style>
+                                              <div id="galeria1">
+<div id="galeria_imagen1">
+    <img id="imgGaleria1" src="images/icons_dark/photo.ico" /></div>
+<div id="galeria_miniaturas1">
+<img class="miniatura1" onclick="javascript:document.getElementById('imgGaleria1').src=this.src;" src="images/icons_dark/galeria1.png" />
+<img class="miniatura1" onclick="javascript:document.getElementById('imgGaleria1').src=this.src;" src="images/icons_dark/galeria2.png" />
+<img class="miniatura1" onclick="javascript:document.getElementById('imgGaleria1').src=this.src;" src="images/icons_dark/galeria3.png" />
+<img class="miniatura1" onclick="javascript:document.getElementById('imgGaleria1').src=this.src;" src="images/icons_dark/galeria4.png" />
+<img class="miniatura1" onclick="javascript:document.getElementById('imgGaleria1').src=this.src;" src="images/icons_dark/galeria5.png" />
+<img class="miniatura1" onclick="javascript:document.getElementById('imgGaleria1').src=this.src;" src="images/icons_dark/galeria6.png" />
+<img class="miniatura1" onclick="javascript:document.getElementById('imgGaleria1').src=this.src;" src="images/icons_dark/galeria7.png" />
+<img class="miniatura1" onclick="javascript:document.getElementById('imgGaleria1').src=this.src;" src="images/icons_dark/galeria8.png" />
+<img class="miniatura1" onclick="javascript:document.getElementById('imgGaleria1').src=this.src;" src="images/icons_dark/galeria9.png" />
+<img class="miniatura1" onclick="javascript:document.getElementById('imgGaleria1').src=this.src;" src="images/icons_dark/galeria10.png" />
+<img class="miniatura1" onclick="javascript:document.getElementById('imgGaleria1').src=this.src;" src="images/icons_dark/galeria11.png" />
+<img class="miniatura1" onclick="javascript:document.getElementById('imgGaleria1').src=this.src;" src="images/icons_dark/galeria12.png" />
+<img class="miniatura1" onclick="javascript:document.getElementById('imgGaleria1').src=this.src;" src="images/icons_dark/galeria13.png" />
+<img class="miniatura1" onclick="javascript:document.getElementById('imgGaleria1').src=this.src;" src="images/icons_dark/galeria14.png" />
+<img class="miniatura1" onclick="javascript:document.getElementById('imgGaleria1').src=this.src;" src="images/icons_dark/galeria15.png" />
+</div>
+</div>
+        <div data-role="content">
+            <!-- custom credits footer -->
+            <div class="springboard-credits">
+            </div>
+        </div>
+        
+    </div> <!-- page: videos -->
+
+
+
+        
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- friends -->
+    <div data-role="page" id="GASTRONOMIA" data-theme="a">
+    
+        <!-- header (same data-id for persistent toolbar) -->
+        <div data-role="header" data-id="springboardnav-header" data-position="fixed">
+            <h1>GASTRONOMIA</h1>
+            <!-- wrap link inside div to prevent jquery mobile from automatically converting to button -->
+            <div class="springboard-backbtn">
+                <a href="#" data-rel="back">
+                    <img src="images/icons_dark/home.ico" width="25%" height="25%"/>
+                </a>
+            </div>
+        </div>
+        <br>
+         
+           <center><div class="ui-grid-a springboard">
+                
+                <!-- row 1, column 1 -->
+                <div class="ui-block-a">
+                    <a href="#PLATOS" data-transition="fade">
+                        <img src="images/icons_dark/soup.ico" class="springboard-portrait-img" />
+                        <p></p><p>PLATOS TIPICOS</p>
+                    </a>
+                </div>
+                
+                <!-- row 1, column 2 -->
+                <div class="ui-block-b">
+                    <a href="#BEBIDAS" data-transition="fade">
+                        <img src="images/icons_dark/Drink.ico" class="springboard-portrait-img"></img>
+                        <p></p><p>BEBIDAS</p>
+                    </a>
+                </div>
+                
+                <!-- row 2, column 1 -->
+                <div class="ui-block-a">
+                    <a href="#OTROS" data-transition="flip">
+                        <img src="images/icons_dark/queso2.png" class="springboard-portrait-img"></img>
+                        <p></p><p>OTROS</p>
+                    </a>
+                </div>
+                
+                <!-- row 2, column 2 -->
+                
+                
+            </div></center> 
+        
+        
+       
+
+        <div data-role="content">
+            <!-- custom credits footer -->
+            <div class="springboard-credits">
+
+            </div>
+        </div>
+        
+        
+    </div> <!-- page: friends -->
+
+
+
+
+        
+        
+        
+
+
+
+    <!-- videos -->
+    <div data-role="page" id="PLATOS" data-theme="a">
+    
+        <!-- header (same data-id for persistent toolbar) -->
+        <div data-role="header" data-id="springboardnav-header" data-position="fixed">
+            <h1>PLATOS TIPICOS</h1>
+            <!-- wrap link inside div to prevent jquery mobile from automatically converting to button -->
+            <div class="springboard-backbtn">
+                <a href="#GASTRONOMIA" data-rel="back">
+                   <img src="images/icons_dark/home.ico" width="25%" height="25%"/>
+                </a>
+            </div>
+        </div>
+        <CENTER> <h2 class="page_title">MUTE</h2><img src="images/icons_dark/mute.png"/>
+                                                  </CENTER><BR><BR>
+                                              Este plato tipico santandereano esta hecho a base de maiz, costilla de res, carne de cerdo, entrañas picadas, con prescencia de una gran cantidad de verduras, tuberculos y especias que en conjunto conforman un plato gastronomico con todos los nutrientes necesarios y un gran aporte d eproteina y fibra.<BR><BR>
+                                                  <CENTER> <h2 class="page_title">MAZAMORRA</h2><img src="images/icons_dark/masamorra.png"/>
+                                                  </CENTER><BR><BR>
+                                                  La masamorra es un plato popular en la region, aunque de origen poco claro, este plato consistia en un guiso con el que se alimentaban a los remeros de las galeras y a los marineros, se conoce la masamorra por ser una sopa semiliquida y de consistencia espesa.
+
+En esta region se encuentran dos tipos de mazamorra, la "dulce" preparada con azucar o panela y la "chiquita" que lleva masa d emaiz, cebolla, cilantro, ajo, habas, frijoles, papa y tallos.
+                                                  <BR><BR>
+                                                  <CENTER> <h2 class="page_title">SOPA DE CEBADA</h2><img src="images/icons_dark/CEBADA.png"/>
+                                                  </CENTER><BR><BR>
+                                                  Exquisita Sopa de Cebada, una receta saludable y con mucho sabor! Un plato muy colombiano con vegetales frescos, la sustancia de un buen caldo y la cebada le aporta un gran valor nutricional.
+                                                      <BR><BR>
+                                                  <CENTER> <h2 class="page_title">CHOROTAS</h2><img src="images/icons_dark/chorota.png" width="100%"height="100%"/>
+                                                  </CENTER><BR><BR>
+                                                          Tipicamente desde nuestros ancestros se ha realizado este plato, el cual consiste en hacer una especie de "empanada" hecho de harina de maiz, este es rellenado de guacas, huevo, cuajada, en algunos casos carne de cerdo o res y se cocinan en sancocho de gallina criolla.
+                                                          <BR><BR>
+                                                  <CENTER> <h2 class="page_title">CALOSTROS</h2><img src="images/icons_dark/calostro.png" width="100%"height="100%"/>
+                                                  </CENTER>
+                                                          Este es uno de los platos más exquisitos y tradicionales de Onzaga. Se denomina calostro a la leche de los primeros días tras el parto de la madre, por este motivo es un producto escaso, ya que solo se pueden obtener pequeñas cantidades y siempre de cabras o vacas que tengan alimento en exceso para la perfecta nutrición de sus crías.
+        <div data-role="content">
+            <!-- custom credits footer -->
+            <div class="springboard-credits">
+            </div>
+        </div>
+        
+    </div> <!-- page: videos -->
+
+    <!-- videos -->
+    <div data-role="page" id="BEBIDAS" data-theme="a">
+    
+        <!-- header (same data-id for persistent toolbar) -->
+        <div data-role="header" data-id="springboardnav-header" data-position="fixed">
+            <h1>BEBIDAS</h1>
+            <!-- wrap link inside div to prevent jquery mobile from automatically converting to button -->
+            <div class="springboard-backbtn">
+                <a href="#GASTRONOMIA" data-rel="back">
+                   <img src="images/icons_dark/home.ico" width="25%" height="25%"/>
+                </a>
+            </div>
+        </div>
+       <CENTER><h2 class="page_title">CHICHA DE MAIZ</h2><br><br><img src="images/icons_dark/chicha.png"/></CENTER><br><br>
+                                             La bebida fermentada tradicional llamada chicha se prepara principalmente con maíz, sin embargo, también se puede preparar con yuca, arroz, avena, piña, arracacha u otros ingredientes.
+La chicha de maíz o chicha de jora, por tradición indigena se preparaba masticando el maíz para hacer la mezcla y luego se dejaba fermentar en una olla de barro con especias y panela. Actualmente, se muele la masa de maiz cocida con anterioridad en un molino y de ahi pasa a su fermentacion con panela.<br><br>
+<CENTER><h2 class="page_title">MASATO</h2><img src="images/icons_dark/masato.png"/></CENTER>
+                                                  El masato es una de las bebidas originaria de las etnias indígenas de los Andes y de amplio consumo en los departamentos de Cundinamarca, Santander, Tolima y Boyacá.<br><br>
+
+En su preparación generalmente intervienen la harina de arroz, agua, azúcar, clavos de olor y canela. Sin embargo también existen preparaciones con trigo, piña, mango y maíz entre otro ingredientes, las cuales son más espesas.<br><br>
+
+Usualmente se utiliza para acompañar mantecadas, galleticas, almojábanas, garullas o en algunos casos empanaditas de carne o pollo, su consumo es mayor en “Época de Navidad” acompañado con buñuelos , natilla y tamales.<br><br>
+
+El Masato es una bebida ancestral… Su preparación consiste en dejar fermentar en una olla, agua, panela y/o azucar morena, arróz ó yuca, maíz o harina de trigo , cocinada previamente bien sea la yuca o el arroz , etc . en agua escurrida y pasadas por tamiz , se deja a fermentar en un recipiente (si es olla de barro mejor) por un tiempo aproximado de 8 días, hasta que la mezcla comience a generar espuma.<br><br>
+                                   <br><br>
+<CENTER><h2 class="page_title">GUARAPO</h2><img src="images/icons_dark/guarapo.png"/></CENTER>
+                                                  A lo largo de la historia de Santander, el consumo de bebidas como el guarapo ha sido asociado al recio carácter de los habitantes de la región, y eso, por supuesto, incluye a los protagonistas de las revueltas que iniciaron la etapa de la Independencia.<br><br>
+El guarapo, guandolo, toniferro, tresnatas o como quiera llamarse, ha formado parte de la esencia del campesino Onzagueño, y la historia le ha negado su presencia en los más importantes hechos de la revolución que llevó a la liberación de la cadena española, y que fue aprovechada en épocas posteriores para el encadenamiento, más fuerte y consistente, a la sumisión frente a otras culturas y a gobiernos avasalladores, que trajeron consigo la intención de monopolizar el consumo por parte del pueblo.
+                   
+                                <br><br>
+<CENTER><h2 class="page_title">PONCHE</h2><img src="images/icons_dark/PONCHE.png"/></CENTER>
+                                        
+                                        El ponche de huevo es una bebida alcohólica que se prepara mezclando ron con leche caliente, azúcar, yemas de huevo y claras batidas.
+
+El ponche de huevo se sirve como bebida durante la Navidad y la víspera de Año Nuevo. También se consume esta bebida en Día de Acción de Gracias.
+
+Una tradición que los campesinos de la región preservan y un rico recuerdo de infancia. Imagínese a esas abuelitas, abrigadas y con un pañuelo en la cabeza, batiendo, batiendo y batiendo huevos, preferiblemente de pato o criollos, para luego mezclar  con café colado, leche, canela, nuez moscada, azúcar y un toque de sal. ¿El resultado?  un sabroso y revitalizante ponche.
+                                        
+        <div data-role="content">
+            <!-- custom credits footer -->
+            <div class="springboard-credits">
+            </div>
+        </div>
+        
+    </div> <!-- page: videos -->
+
+    <!-- videos -->
+    <div data-role="page" id="OTROS" data-theme="a">
+    
+        <!-- header (same data-id for persistent toolbar) -->
+        <div data-role="header" data-id="springboardnav-header" data-position="fixed">
+            <h1>OTROS</h1>
+            <!-- wrap link inside div to prevent jquery mobile from automatically converting to button -->
+            <div class="springboard-backbtn">
+                <a href="#GASTRONOMIA" data-rel="back">
+                   <img src="images/icons_dark/home.ico" width="25%" height="25%"/>
+                </a>
+            </div>
+        </div>
+       <CENTER><h2 class="page_title">QUESO DE HOJA</h2><img src="images/icons_dark/queso.png"/>
+                                              </CENTER> <br><br>
+                                                  El queso de hoja es una comida típica de la zona Onzagueña. El nombre se debe a la hoja de achira, en la cual se deja reposar el queso, dándole un sabor único y exquisito.<br><br>
+
+El queso de hoja es muy popular en santander. Su costo lo convierte en una buena opción para los turistas y lugareños como suplemento a su dieta. Se lo consume con biscochos, con bocadillo y con unas galleta levemente saladas. Este se usa como suplemento al tomar café, chocolate, chicha y masato.
+                                             <CENTER><h2 class="page_title">ABEJONES DE MAIZ</h2><img src="images/icons_dark/ANEJONES.png"/>
+                                              </CENTER> 
+                                              Estos son el resultado de tostar maiz con panela y canela, mediante el proceso del tostado con ayuda de aceite en un tiesto, al cual sele agreda una mezcla de panela con canela como caramelo, agitandolos hasta el punto de qe no se peguen los abejones.<br><br>
+                                                  <CENTER><h2 class="page_title">AREPA DE BORONA</h2><img src="images/icons_dark/borona.png"/>
+                                              </CENTER> 
+                                                  <br><br>
+                                                  La arepa de boronas es otra preparacion gastronomica tipica de este municipio, esta consiste en masa de maiz, melao (jarabe a base de panela), mantequilla, huevos y sal, despued de formada la arepa, esta es pasada al tejo por 5 min y despues tostada al fuego, lo cual le da su caracteristica especial.
+                                                  <br><br>
+                                                  <CENTER><h2 class="page_title">MANTECADA DE MAÍZ</h2><img src="images/icons_dark/mantecada.png"/>
+                                              </CENTER> 
+                                                  <br><br>
+                                                  La mantecada de maiz trdicional, es una torta esponjosa, de consistencia agradable, exquisita al ser acompañada de masato, cafe, chocolate u otra bebida de preferencia, esta es hecha a partir de harina de maiz, manteca y esencia de almendra entre otros ingredientes. 
+                                                  
+        <div data-role="content">
+            <!-- custom credits footer -->
+            <div class="springboard-credits">
+            </div>
+        </div>
+        
+    </div> <!-- page: videos -->
+
+
+
+
+
+
+
+        
+        
+        
+        <!-- friends -->
+    <div data-role="page" id="VISITAR" data-theme="a">
+    
+        <!-- header (same data-id for persistent toolbar) -->
+        <div data-role="header" data-id="springboardnav-header" data-position="fixed">
+            <h1>RUTAS</h1>
+            <!-- wrap link inside div to prevent jquery mobile from automatically converting to button -->
+            <div class="springboard-backbtn">
+                <a href="#" data-rel="back">
+                    <img src="images/icons_dark/home.ico" width="25%" height="25%"/>
+                </a>
+            </div>
+        </div>
+        <br>
+                                    <h1>LUGARES DE INTERES</h1>
+                                               <style type="text/css">
+    #mapa { height: 500px; }
+    </style>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript">
+    function initialize() {
+      var marcadores = [
+       
+['<a href="https://www.youtube.com/user/desarrollowebcom/playlists">PIEDRA CAME</a>', 6.360106,-72.813810],
+['PUENTE BOLIVAR',6.348831,-72.814415],
+['SANTUARIO OVINO-CAPRINO LA CASTELLANA',6.328578,-72.825870],
+['LOS BOHIOS',6.341935,-72.822112],
+['SE�OR DE LOS MILAGROS',6.342323,-72.821471],
+['PUNTO DE DE INFORMACION',6.299301,-72.833818],
+['CASCADA TINAVITA',6.299052,-72.846260],
+['EL SALADO',6.451914,-72.815783],
+['CASCADA EL CHORRERON',6.319818,-72.772029],
+['LA GRUTA',6.346453,-72.813962]      ];
+      var map = new google.maps.Map(document.getElementById('mapa'), {
+        zoom: 13,
+        center: new google.maps.LatLng(6.334177, -72.816473),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      });
+      var infowindow = new google.maps.InfoWindow();
+      var marker, i;
+      for (i = 0; i < marcadores.length; i++) {  
+        marker = new google.maps.Marker({
+          position: new google.maps.LatLng(marcadores[i][1], marcadores[i][2]),
+          map: map
+        });
+        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+          return function() {
+            infowindow.setContent(marcadores[i][0]);
+            infowindow.open(map, marker);
+          }
+        })(marker, i));
+      }
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  <div id="mapa"></div>
+        
+       
+
+        <div data-role="content">
+            <!-- custom credits footer -->
+            <div class="springboard-credits">
+
+            </div>
+        </div>
+        
+        
+    </div> <!-- page: friends -->
+
+        
+        
+        
+
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+
+
+
+    <!-- videos -->
+    <div data-role="page" id="RUTAS" data-theme="a">
+    
+        <!-- header (same data-id for persistent toolbar) -->
+        <div data-role="header" data-id="springboardnav-header" data-position="fixed">
+            <h1>RUTAS</h1>
+            <!-- wrap link inside div to prevent jquery mobile from automatically converting to button -->
+            <div class="springboard-backbtn">
+                <a href="#" data-rel="back">
+                   <img src="images/icons_dark/home.ico" width="25%" height="25%"/>
+                </a>
+            </div>
+        </div>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d179456.42863135558!2d-72.78941580462485!3d6.333846865149083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2ses!4v1496435478959" width="600px" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div data-role="content">
+            <!-- custom credits footer -->
+            <div class="springboard-credits">
+            </div>
+        </div>
+        
+    </div> <!-- page: videos -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- photos -->
+    <div data-role="page" id="GALERIA" data-theme="a">
+    
+        <!-- header (same data-id for persistent toolbar) -->
+        <div data-role="header" data-id="springboardnav-header" data-position="fixed">
+            <h1>GALERIA</h1>
+            <!-- wrap link inside div to prevent jquery mobile from automatically converting to button -->
+            <div class="springboard-backbtn">
+                <a href="#" data-rel="back">
+                    <img src="images/icons_dark/home.ico" width="25%" height="25%"/>
+                </a>
+            </div>
+        </div>
+                                               <style type="text/css">
+   #galeria2, #galeria2 * {box-sizing:border-box,-moz-box-sizing:border-box}
+#galeria2 {
+border: 1px solid #EAEAEA;  
+padding: 10px;
+padding-bottom: 0;
+background: white;  
+width: 410px;  
+}
+#galeria_miniaturas2 {
+display: table;
+margin: 0 auto;
+}
+#imgGaleria2 {
+border: 1px solid #F2F2F2;  
+padding: 3px;
+width: x; 
+height: x; 
+}
+.miniatura2 {
+width:  60px;  
+height:  60px;  
+float: left;
+cursor: pointer;
+padding: 5px;
+margin: 10px 5px;
+}
+.miniatura2:hover {
+opacity:.8;   
+-moz-opacity:.8;
+-khtml-opacity:.8;
+filter:alpha(opacity=80);
+}
+.miniatura2:active {
+opacity:1;
+-moz-opacity:1;
+-khtml-opacity:1;
+filter:alpha(opacity=80);
+}
+    </style>
+                                              <div id="galeria2">
+<div id="galeria_imagen2">
+    <img id="imgGaleria2" src="images/icons_dark/photo.ico" /></div>
+<div id="galeria_miniaturas2">
+<img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo10.png" />
+    <img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo9.png" /><img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo8.png" /><img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo12.png" /><img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo16.png" /><img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo17.png" /><img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo18.png" /><img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo19.png" /><img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo24.png" /><img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo26.png" /><img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo27.png" /><img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo28.png" /><img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo37.png" /><img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo39.png" /><img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo41.png" /><img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo42.png" /><img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo44.png" /><img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo45.png" /><img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo46.png" /><img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo48.png" /><img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo49.png" /><img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo50.png" /><img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo51.png" /><img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo52.png" /><img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo53.png" /><img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo54.png" /><img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo55.png" /><img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo57.png" /><img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo58.png" /><img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo60.png" /><img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo62.png" /><img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo63.png" /><img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo64.png" /><img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo65.png" /><img class="miniatura2" onclick="javascript:document.getElementById('imgGaleria2').src=this.src;" src="images/galeria/Sin%20t%C3%ADtulo66.png" />
+
+
+
+</div>
+</div>
+        <!-- content -->
+        <div data-role="content">
+            <!-- custom credits footer -->
+            <div class="springboard-credits">
+
+            </div>
+        </div>
+        
+    </div> <!-- page: photos -->
+
+
+
+
+
+
+
+
+
+    <!-- blogs -->
+    <div data-role="page" id="DIRECTORIO" data-theme="a">
+    
+        <!-- header (same data-id for persistent toolbar) -->
+        <div data-role="header" data-id="springboardnav-header" data-position="fixed">
+            <h1>Blogs</h1>
+            <!-- wrap link inside div to prevent jquery mobile from automatically converting to button -->
+            <div class="springboard-backbtn">
+                <a href="#" data-rel="back">
+                    <img src="images/icons_dark/home.ico" width="25%" height="25%"/>
+                </a>
+            </div>
+        </div>
+         <br><br>Hotel El Monje<br>
+3102561277<br>
+Dirección Calle 4 N 3-43<br>
+Propietario: Beyer Augusto Aldana<br><br>
+
+Parrilla Onzagueña<br>
+3143283500<br>
+Dirección Calle 5 N 2-11<br>
+Propietario Pedro Gómez<br><br>
+
+Restaurante Los Guanes<br>
+3144172970-3112365993<br>
+Dirección Frente Al Parque Principal<br>
+Propietario Marleny Vargas<br><br>
+
+Café Bar Nilsa<br>
+3123127294<br>
+Dirección Carrera 2 N 4-17<br>
+Propietario Orlando Sandoval<br><br>
+        <!-- content -->
+        <div data-role="content">
+            <!-- custom credits footer -->
+            <div class="springboard-credits">
+
+            </div>
+        </div>
+        
+    </div> <!-- page: blogs -->
+
+
+ <!-- blogs -->
+    <div data-role="page" id="MANUAL" data-theme="a">
+    
+        <!-- header (same data-id for persistent toolbar) -->
+        <div data-role="header" data-id="springboardnav-header" data-position="fixed">
+            <h1>GUIA DE <BR>TURISMO</h1>
+            <!-- wrap link inside div to prevent jquery mobile from automatically converting to button -->
+            <div class="springboard-backbtn">
+                <a href="#" data-rel="back">
+                    <img src="images/icons_dark/home.ico" width="25%" height="25%"/>
+                </a>
+            </div>
+        </div>
+            <br><br><br><br>
+        Disfrute de los ríos de nuestra región de maneras extremas con los rápidos de varias dificultades para aumentar su adrenalina o hacer placentera su estadía. Disfrute hoy mismo de la aventura de su vida participando de esta actividad con los diferentes planes que tenemos para usted.<br> <br><br>
+            <img src="images/galeria/union.jpg" width="350px" height="200px"/><br>
+            
+            <br><br>
+            Arenera Puente Tierra:
+Recorrido de 7Kmts. La duración del tour es de 2 horas. También existe la posibilidad de bañarse en el rio y relajarse en medio de la aventura. Este recorrido es ideal para niños y adultos sin ningún tipo de experiencia en deportes de aventura. Aquí encontramos rápidos grado 1 a 3.<
+<br><br>
+Cascada de Siachía:
+Recorrido de 4Kmts; la duración del tour es de 2 horas 30 minutos. También existe la oportunidad de bañarse en el rio Siachía. Este recorrido es ideal para personas que tengan algún tipo de experiencia en deportes de aventura; aquí encontramos rápidos de grado 1 a 4. <br><br>
+            <img src="images/galeria/cascada.JPG" width="350px" height="200px"/><br>
+<br><br>
+Laguna de Morro Pardo, El Encanto,  
+Vereda El Ramal
+Salida desde el puedo de Onzaga 30 minutos en carro y 4 horas de caminata.
+<br><br>
+Laguna La Boba Vereda Ganivita
+nace el rio Chaguacá
+ Salida desde el pueblo de Onzaga, 2 horas en carro y 1 hora a pie; laguna encantada por lo que se recomienda no arrojar piedras y gritar.
+<br><br>
+Laguna La Brava, Vereda Tombita
+nace el rio Fonce
+Salida desde el pueblo de Onzaga, 30 minutos en carro y 3 horas a pie, se recomienda para hacer camping.<br><br>
+            <img src="images/galeria/laguna.JPG" width="350px" height="200px"/><br>
+        <!-- content -->
+        <div data-role="content">
+            <!-- custom credits footer -->
+            <div class="springboard-credits">
+
+            </div>
+        </div>
+        
+    </div> <!-- page: blogs -->
+
+
+
+
+
+
+</body>
+
+</html>
